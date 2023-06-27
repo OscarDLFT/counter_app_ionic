@@ -8,12 +8,19 @@
         "clobbers": [
           "cordova.plugins.screenorientation"
         ]
+        },
+      {
+          "id": "es6-promise-plugin.Promise",
+          "file": "plugins/es6-promise-plugin/www/promise.js",
+          "pluginId": "es6-promise-plugin",
+        "runs": true
         }
     ];
     module.exports.metadata =
     // TOP OF METADATA
     {
-      "cordova-plugin-screen-orientation": "3.0.3"
+      "cordova-plugin-screen-orientation": "3.0.3",
+      "es6-promise-plugin": "4.1.0"
     };
     // BOTTOM OF METADATA
     });

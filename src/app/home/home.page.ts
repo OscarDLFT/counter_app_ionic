@@ -10,7 +10,9 @@ export class HomePage {
  public number: number = 0;
  public showNumber: string = '00';
 
-  constructor() {}
+  constructor(
+    private screenOrientation: ScreenOrientation
+  ) {}
 
   /** Aumenta el número */
   up(): string {
