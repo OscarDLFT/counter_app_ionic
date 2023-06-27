@@ -7,12 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage {
 
- private number: number = 0;
+ public number: number = 0;
  public showNumber: string = '00';
 
   constructor() {}
 
-  up(){}
-  down(){}
+  /** Aumenta el número */
+  up(): string {
+    this.number++;
+    if(this.number < 10){
+      return this.showNumber = '0' + this.number;
+    } else {
+      return this.showNumber = '' + this.number;
+    }
+  }
+
+  /** Resta un número */
+  down(): string {
+    this.number--;
+    if(this.number < 10){
+      return this.showNumber = '0' + this.number;
+    } else {
+      return this.showNumber = '' + this.number;
+    }
+  }
 
 }
