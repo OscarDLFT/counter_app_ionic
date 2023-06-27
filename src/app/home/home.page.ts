@@ -12,4 +12,7 @@ export class HomePage {
 
   constructor() {}
 
+  up(){}
+  down(){}
+
 }
