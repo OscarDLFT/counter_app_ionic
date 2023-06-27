@@ -4,8 +4,8 @@
   </ion-button>
 </ion-header>
 
-<ion-content class="ion-text-center no-scroll">
-  <ion-text>{{showNumber}}</ion-text>
+<ion-content class="ion-text-center no-scroll" [ngClass]="{'ion-padding': screenOrientation.type === screenOrientation.ORIENTATIONS.PORTRAIT_PRIMARY}">
+  <ion-text class="sizeNumber">{{showNumber}}</ion-text>
 </ion-content>
 
 <ion-footer class="ion-padding ion-no-border">

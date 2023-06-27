@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 
 @Component({
   selector: 'app-home',
@@ -11,8 +12,10 @@ export class HomePage {
  public showNumber: string = '00';
 
   constructor(
-    private screenOrientation: ScreenOrientation
-  ) {}
+    public screenOrientation: ScreenOrientation,
+  ) {
+    
+  }
 
   /** Aumenta el número */
   up(): string {
